@@ -14,7 +14,7 @@ The first tab should present the following information:
 The second tab should contain two segments in a segmented control:
  1. The first segment contains a table that will show the information received from this RSS feed "http://feeds.reuters.com/reuters/businessNews"
  2. The second segment contains a table which is a unification of the data received from "http://feeds.reuters.com/reuters/entertainment" and "http://feeds.reuters.com/reuters/environment". First the items from “Entertainment” should be presented, and then the items from “Environment”.
- - [X] I've created UITableView managed by [SecondViewController](https://github.com/nikitaKurtin/cobox/blob/master/CoBoxTask/controllers/SecondViewController.swift), presented data is changed when user selects one of the Segments in SegmentController, default selection is First (business news).
+ - [X] I've created UITableView managed by [SecondViewController](https://github.com/nikitaKurtin/cobox/blob/master/CoBoxTask/controllers/SecondViewController.swift), presented data is changed when user selects one of the Segments in SegmentController, default selection is First (business news). To load the data from unsecure (plain http) web service, I've configured the `NSAppTransportSecurity` in [Info.plist](https://github.com/nikitaKurtin/cobox/blob/master/CoBoxTask/Info.plist) for the given DNS only.
 
 ### You can parse the RSS feed using any method you like.
  - [X] I've created a custom parser [FeedParser](https://github.com/nikitaKurtin/cobox/blob/master/CoBoxTask/utils/FeedParser.swift) based on the built in `XMLParser`.
